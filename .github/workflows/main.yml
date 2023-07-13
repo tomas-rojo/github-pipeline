@@ -1,0 +1,19 @@
+name: Simple Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Build and Test
+        run: |
+          echo "Running build and test commands..."
+          # Add your build and test commands here

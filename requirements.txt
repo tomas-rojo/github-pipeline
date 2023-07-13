@@ -1,2 +1,5 @@
 Flask==2.0.1
 pytest
+tox
+coverage
+werkzeug==2.0.3
